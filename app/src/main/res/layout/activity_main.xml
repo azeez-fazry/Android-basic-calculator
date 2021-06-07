@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050F42"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="70pt"
+            android:layout_height="30pt"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#B7C1FA"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="70pt"
+            android:layout_height="30pt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#B7C1FA"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buAdd"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="#7068B3"
+            android:onClick="buOpEvent"
+            android:text="+"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/buSub"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="#7068B3"
+            android:onClick="buOpEvent"
+            android:text="-"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/buMul"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="#7068B3"
+            android:onClick="buOpEvent"
+            android:text="*"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/buDiv"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="#7068B3"
+            android:onClick="buOpEvent"
+            android:text="/"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/buReset"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_marginRight="1pt"
+            android:background="#4C438F"
+            android:onClick="buOpEvent"
+            android:text="CLR"
+            android:textSize="22sp" />
+
+    </TableRow>
+
+    <EditText
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#8F8181"
+        android:textSize="30sp" />
+
+</LinearLayout>
